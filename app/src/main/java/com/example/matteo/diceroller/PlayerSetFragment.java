@@ -15,9 +15,9 @@ import android.widget.EditText;
 
 public class PlayerSetFragment extends Fragment {
 
-    @Nullable
+
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,  Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_player_set, container, false);
 
         final EditText editText_d4 = (EditText) v.findViewById(R.id.dQuattroEdt);
