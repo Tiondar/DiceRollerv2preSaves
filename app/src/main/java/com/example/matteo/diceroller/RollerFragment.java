@@ -6,6 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
 
 
 /**
@@ -28,23 +30,32 @@ public class RollerFragment extends Fragment {
         final Button button_d4 = (Button) v.findViewById(R.id.buttonD4);
         final Button button_d6 = (Button) v.findViewById(R.id.buttonD6);
         final Button button_d8 = (Button) v.findViewById(R.id.buttonD8);
-        final Button button_d10 = (Button) v.findViewById(R.id.buttonD12);
-        final Button button_d12 = (Button) v.findViewById(R.id.buttonD20);
-        final Button button_d20 = (Button) v.findViewById(R.id.buttonD100);
+        final Button button_d10 = (Button) v.findViewById(R.id.buttonD10);
+        final Button button_d12 = (Button) v.findViewById(R.id.buttonD12);
+        final Button button_d20 = (Button) v.findViewById(R.id.buttonD20);
         final Button button_d100 = (Button) v.findViewById(R.id.buttonD100);
         final Button button_setPlayer = (Button) v.findViewById(R.id.buttonSetPlayer);
         final Button button_goToSetPlayer = (Button) v.findViewById(R.id.goToSetPlayer);
+        final TextView resultTextView = (TextView) v.findViewById(R.id.risultato);
+
 
         button_d4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
+                int d4Int = Dices.dices4();
+                Toast.makeText(getContext(),"Hai lanciato un d4!!", Toast.LENGTH_SHORT).show();
+                resultTextView.setText("Hai lanciato un d4, il risultato è:  " + d4Int);
             }
         });
 
         button_d6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                int d6Int = Dices.dices6();
+                Toast.makeText(getContext(),"Hai lanciato un d6!!", Toast.LENGTH_SHORT).show();
+                resultTextView.setText("Hai lanciato un d6, il risultato è:  " + d6Int);
 
             }
         });
@@ -53,12 +64,20 @@ public class RollerFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
+                int d8Int = Dices.dices8();
+                Toast.makeText(getContext(),"Hai lanciato un d8!!", Toast.LENGTH_SHORT).show();
+                resultTextView.setText("Hai lanciato un d8, il risultato è:  " + d8Int);
+
             }
         });
 
         button_d10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                int d10Int = Dices.dices10();
+                Toast.makeText(getContext(),"Hai lanciato un d10!!", Toast.LENGTH_SHORT).show();
+                resultTextView.setText("Hai lanciato un d10, il risultato è:  " + d10Int);
 
             }
         });
@@ -67,12 +86,20 @@ public class RollerFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
+                int d12Int = Dices.dices12();
+                Toast.makeText(getContext(),"Hai lanciato un d12!!", Toast.LENGTH_SHORT).show();
+                resultTextView.setText("Hai lanciato un d12, il risultato è:  " + d12Int);
+
             }
         });
 
         button_d20.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                int d20Int = Dices.dices20();
+                Toast.makeText(getContext(),"Hai lanciato un d20!!", Toast.LENGTH_SHORT).show();
+                resultTextView.setText("Hai lanciato un d20, il risultato è:  " + d20Int);
 
             }
         });
@@ -81,6 +108,10 @@ public class RollerFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
+                int d100Int = Dices.dices100();
+                Toast.makeText(getContext(),"Hai lanciato un d100!!", Toast.LENGTH_SHORT).show();
+                resultTextView.setText("Hai lanciato un d100, il risultato è:  " + d100Int);
+
             }
         });
 
@@ -88,12 +119,20 @@ public class RollerFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
+                //int d4Int = Dices.dices4();
+                Toast.makeText(getContext(),"Not yet implemented!!", Toast.LENGTH_SHORT).show();
+                //resultTextView.setText("Hai lanciato un d4, il risultato è:  " + d4Int);
+
             }
         });
 
         button_goToSetPlayer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                //int d4Int = Dices.dices4();
+                Toast.makeText(getContext(),"Not yet implemented!!", Toast.LENGTH_LONG).show();
+                //resultTextView.setText("Hai lanciato un d4, il risultato è:  " + d4Int);
 
             }
         });

@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:weightSum="6"
-    android:id="@+id/framentRoll"
+    android:id="@+id/fragmentRoll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.matteo.diceroller.RollerFragment">
@@ -10,16 +10,18 @@
     <TextView
         android:id="@+id/risultato"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:gravity="center"
-        android:layout_weight="1"
-        android:text="Il risultato è"
-        android:textSize="20dp"/>
+        android:layout_weight="2"
+        android:text=""
+        android:hint="Dice results here"
+        android:textSize="20dp"
+        android:layout_margin="10dp"/>
 
     <TextView
         android:id="@+id/informazioniPlayer"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:gravity="center"
         android:text="Sono il giocatore 1"
