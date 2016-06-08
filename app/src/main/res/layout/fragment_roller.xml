@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="6"
+    android:id="@+id/framentRoll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.matteo.diceroller.RollerFragment">
+
+    <TextView
+        android:id="@+id/risultato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:text="Il risultato è"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/informazioniPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Sono il giocatore 1"
+        android:textSize="20dp"/>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="d4"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:id="@+id/buttonD4"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="D6"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:id="@+id/buttonD6"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="D8"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:id="@+id/buttonD8"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="D10"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:id="@+id/buttonD10"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:weightSum="4">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="d12"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:id="@+id/buttonD12"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="d20"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:id="@+id/buttonD20"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="d100"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:id="@+id/buttonD100"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="P.Set"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:id="@+id/buttonSetPlayer"/>
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Player"
+        android:textSize="25dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/goToSetPlayer"/>
+
+
+
+</LinearLayout>
